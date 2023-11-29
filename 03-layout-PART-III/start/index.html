@@ -27,10 +27,23 @@
     ></script>
   </head>
   <body class="container">
-    <div class="row">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2">
+      <!-- Nested row -->
       <div class="col">
-        <div class="box"></div>
+        <!-- Started nested row -->
+        <div class="row g-2">
+          <div class="col">
+            <div class="box"></div>
+          </div>
+          <div class="col">
+            <div class="box"></div>
+          </div>
+          <div class="col">
+            <div class="box"></div>
+          </div>
+        </div>       
       </div>
+      <!-- The rest three items-->
       <div class="col">
         <div class="box"></div>
       </div>
