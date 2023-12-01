@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
-    <!-- #2 Seperate PoperJS and BootstrapJS-->
+    <!-- #2 Seperate PopperJS and BootstrapJS-->
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -25,6 +25,80 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <script defer src="script.js"></script>
   </head>
-  <body></body>
+  <body class="bg-secondary-subtle d-flex flex-column justify-content-center align-items-center vh-100">
+   
+    <div class="card w-50 p-3 mb-3 bg-info">
+      <div class="text-white text-center">
+        <span class="fw-bold">Try it free 7 days</span> then $20/mo. thereafter
+      </div>
+    </div>
+
+    <div class="card w-50 p-3">
+      <div class="card-body">
+        <form class="needs-validation" novalidate>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="firstName" placeholder="John" required>
+            <label for="firstName">First Name</label>
+            <div class="invalid-feedback">
+              Please provide your first name.
+            </div>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="lastName" placeholder="name@example.com" required>
+            <label for="lastName">Last Name</label>
+            <div class="invalid-feedback">
+              Please provide your last name.
+            </div>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+            <label for="email">Email address</label>
+            <div class="invalid-feedback">
+              Please provide your email address.
+            </div>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="password" placeholder="Password" required>
+            <label for="password">Password</label>
+            <div class="invalid-feedback">
+              Please provide a password.
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-success w-100 mb-3">CLAIM YOUR FREE TRIAL</button>
+        </form>
+
+        <div class="terms text-center">
+          By clicking the button, you are agreeing to our 
+          <a href="#" class="text-danger link-underline link-underline-opacity-0" data-bs-toggle="modal" data-bs-target="#termModal">Terms and Services</a>
+        </div>
+
+      </div>  
+    </div>
+
+    <div id="alertPlaceholder"></div>
+    
+    <div class="modal fade" id="termModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title">Terms and Services</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, molestias incidunt. Nisi quam iusto exercitationem animi cumque earum ullam deserunt nam illo facere ipsam asperiores nesciunt sint, vitae sequi sed impedit in quibusdam deleniti, repellat itaque praesentium commodi qui. Illum, sed? Architecto iusto deserunt, libero repellat commodi necessitatibus dolores vitae.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
 </html>

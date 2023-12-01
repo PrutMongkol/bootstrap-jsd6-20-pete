@@ -17,6 +17,13 @@ body::before {
   padding: 10px;
 }
 
+.bi {
+  width: 1em;
+  height: 1em;
+  vertical-align: -.125em;
+  fill: currentcolor
+}
+
 @media (min-width: 576px) {
   body::before {
     content: 'sm';
